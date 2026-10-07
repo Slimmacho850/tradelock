@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#161e31" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="lockGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="48" fill="url(#bg)" />
+  <path d="M96 26 L146 47 C146 101 96 148 96 160 C96 148 46 101 46 47 Z" fill="none" stroke="url(#shieldGrad)" stroke-width="6" stroke-linejoin="round" />
+  <rect x="77" y="88" width="38" height="34" rx="7" fill="url(#lockGrad)" />
+  <path d="M85 88 V73 C85 67 90 62 96 62 C102 62 107 67 107 73 V88" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+  <circle cx="96" cy="102" r="4" fill="#070a12" />
+  <path d="M96 106 V112" stroke="#070a12" stroke-width="3" stroke-linecap="round" />
+</svg>

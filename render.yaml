@@ -1,21 +1,10 @@
 services:
-  # Static Web App (Free Hosting)
+  # All-in-One 24/7 Cloud Sentinel & Mobile Web App
   - type: web
-    name: mt5-lock-guardian-web
-    env: static
-    buildCommand: npm run build
-    staticPublishPath: dist
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
-
-  # 24/7 Cloud Sentinel Daemon (Optional free background worker)
-  - type: worker
-    name: mt5-lock-guardian-sentinel
+    name: mt5-risk-guardian
     env: node
-    buildCommand: npm install
-    startCommand: node backend/sentinel.js
+    buildCommand: npm install && npm run build
+    startCommand: node sentinel.js
     envVars:
       - key: META_API_TOKEN
         sync: false
